@@ -31,10 +31,9 @@ const users = [
     },
     "piotr"
 ];
-users.forEach(function(dupa){
-    if(dupa.name == "piotr"){
-       console.log(dupa)
-       }
+users.filter(function(dupa){
+    return dupa.age>20
 
+}).forEach(function(user) {
+    console.log(user)
 })
-
