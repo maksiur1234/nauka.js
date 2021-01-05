@@ -1,6 +1,6 @@
 const users = [
     {
-        name : "piotr", age : 27,
+        name : "piotr", age : 27, 
     },
     {
         name : "beata", age : 50
@@ -29,11 +29,18 @@ const users = [
     {
         name : "maksymilian", age : 29
     },
-    "piotr"
 ];
-users.filter(function(dupa){
-    return dupa.age>20
 
-}).forEach(function(user) {
-    console.log(user)
-})
+users.map(function (user) {
+    return {name: user.name, age: user.age*2}
+}).forEach(displayUser);
+//users.filter(function(dupa){
+//    return dupa.age>20
+//
+//}).forEach(function(user) {
+//    console.log(user)
+//})
+
+function displayUser(user) {
+    console.log(user);
+}
