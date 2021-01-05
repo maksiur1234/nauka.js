@@ -29,8 +29,12 @@ const users = [
     {
         name : "maksymilian", age : 29
     },
+    "piotr"
 ];
 users.forEach(function(dupa){
-    console.log(dupa.name)
+    if(dupa.name == "piotr"){
+       console.log(dupa)
+       }
+
 })
 
